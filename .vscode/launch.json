@@ -42,7 +42,7 @@
             "name": "Debug (Launch)-Four<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "stopOnEntry": false,
             "mainClass": "practice.Four",
             "projectName": "Java",
