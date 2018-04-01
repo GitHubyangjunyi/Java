@@ -1,4 +1,4 @@
-ï»¿
+
 public class InnerClass {
 
 	private int count;
@@ -9,7 +9,7 @@ public class InnerClass {
 			count++;
 	 	}
 		public void introduce(){
-			 System.out.println("æˆ‘çš„åå­—æ˜¯"+this.name);
+			 System.out.println("ÎÒµÄÃû×ÖÊÇ"+this.name);
 		 }
 	 }
 	public void recognize(){

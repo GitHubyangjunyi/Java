@@ -1,4 +1,4 @@
-ï»¿package practice;
+package practice;
 
 public class Score {
 	public static void main(String[] args) {
@@ -6,15 +6,15 @@ public class Score {
 		String str;
 		switch(score){
 		case 10:
-		case 9: str="ä¼˜ç§€";
+		case 9: str="ÓÅĞã";
 		break;
-		case 8: str="è‰¯å¥½";
+		case 8: str="Á¼ºÃ";
 		break;
-		case 7: str="åŠæ ¼";
+		case 7: str="¼°¸ñ";
 		break;
-		case 6: str="åŠæ ¼";
+		case 6: str="¼°¸ñ";
 		break;
-		default: str="ä¸åŠæ ¼";
+		default: str="²»¼°¸ñ";
 		break;
 		}
 		System.out.println(str);

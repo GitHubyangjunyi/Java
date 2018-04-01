@@ -1,33 +1,33 @@
-ï»¿package practice;
+package practice;
 
 public class Month {
 	public static void main(String[] args) {
 		int m=Integer.parseInt(args [0]);
 		String str = null;
 		switch(m) {
-		case 1:str="ä¸€æœˆ";
+		case 1:str="Ò»ÔÂ";
 		break;
-		case 2:str="äºŒæœˆ";
+		case 2:str="¶şÔÂ";
 		break;
-		case 3:str="ä¸‰æœˆ";
+		case 3:str="ÈıÔÂ";
 		break;
-		case 4:str="å››æœˆ";
+		case 4:str="ËÄÔÂ";
 		break;
-		case 5:str="äº”æœˆ";
+		case 5:str="ÎåÔÂ";
 		break;
-		case 6:str="å…­æœˆ";
+		case 6:str="ÁùÔÂ";
 		break;
-		case 7:str="ä¸ƒæœˆ";
+		case 7:str="ÆßÔÂ";
 		break;
-		case 8:str="å…«æœˆ";
+		case 8:str="°ËÔÂ";
 		break;
-		case 9:str="ä¹æœˆ";
+		case 9:str="¾ÅÔÂ";
 		break;
-		case 10:str="åæœˆ";
+		case 10:str="Ê®ÔÂ";
 		break;
-		case 11:str="åä¸€æœˆ";
+		case 11:str="Ê®Ò»ÔÂ";
 		break;
-		case 12:str="åäºŒæœˆ";
+		case 12:str="Ê®¶şÔÂ";
 		break;
 		}
 		System.out.print(str);

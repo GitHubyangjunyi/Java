@@ -1,12 +1,12 @@
-ï»¿package practice;
+package practice;
 
 	class Mammal {
 		public Mammal(int legs) {
-			System.out.println("æˆ‘æ˜¯ä¸€åª"+legs+"è…¿çš„å“ºä¹³åŠ¨ç‰©!");
+			System.out.println("ÎÒÊÇÒ»Ö»"+legs+"ÍÈµÄ²¸Èé¶¯Îï!");
 	}
 
 		public void call() {
-			System.out.println("å“ºä¹³åŠ¨ç‰©æ˜¯ä¼šå«çš„!");
+			System.out.println("²¸Èé¶¯ÎïÊÇ»á½ĞµÄ!");
 	}
 }
 
@@ -17,7 +17,7 @@
 
 		public void call() {
 			super.call();
-			System.out.println("çŒ«å’ªå–µå–µå«!");
+			System.out.println("Ã¨ßäß÷ß÷½Ğ!");
 		}
 	}
 
@@ -28,7 +28,7 @@
 
 		public void call() {
 			super.call();
-			System.out.println("ç‹—ç‹—æ±ªæ±ªå«!");
+			System.out.println("¹·¹·ÍôÍô½Ğ!");
 		}
 	}
 
@@ -39,7 +39,7 @@
 		
 		public void call() {
 			super.call();
-			System.out.println("ç¾Šæ˜¯å’©å’©å«!");
+			System.out.println("ÑòÊÇßãßã½Ğ!");
 		}
 	}
 	
@@ -47,15 +47,15 @@
 		
 		public static void main(String[] args) {
 			Cat cat=new Cat(4);
-			System.out.println("çŒ«å’ªçš„å«å£°!");
+			System.out.println("Ã¨ßäµÄ½ĞÉù!");
 			cat.call();
-			System.out.println("----ç‹—çš„å«å£°æè¿°----");
+			System.out.println("----¹·µÄ½ĞÉùÃèÊö----");
 			Dog dog=new Dog(4);
-			System.out.println("ç‹—ç‹—çš„å«å£°!");
+			System.out.println("¹·¹·µÄ½ĞÉù!");
 			dog.call();
-			System.out.println("----ç¾Šçš„å«å£°æè¿°----");
+			System.out.println("----ÑòµÄ½ĞÉùÃèÊö----");
 			Sheep sheep=new Sheep(4);
-			System.out.println("ç¾Šçš„å«å£°!");
+			System.out.println("ÑòµÄ½ĞÉù!");
 			sheep.call();
 			
 		}

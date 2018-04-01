@@ -1,12 +1,12 @@
-ï»¿package practice;
+package practice;
 
 public class Prime {
 	public static void main(String[] args) {
 		int i,j,k;
 		int num=0;
-		for(i=1;i<=100;i++){//å¤–å±‚å¾ªçŽ¯iæŽ§åˆ¶1åˆ°100
-			k=(int)Math.sqrt((double)i);//æ±‚å‡ºiçš„å¹³æ–¹æ ¹k
-			for(j=2;j<=k;j++){//ä»Ž2ä¾æ¬¡é™¤åˆ°kï¼Œå¦‚æžœä¸èƒ½æ•´é™¤å°±æ˜¯ç´ æ•°
+		for(i=1;i<=100;i++){//Íâ²ãÑ­»·i¿ØÖÆ1µ½100
+			k=(int)Math.sqrt((double)i);//Çó³öiµÄÆ½·½¸ùk
+			for(j=2;j<=k;j++){//´Ó2ÒÀ´Î³ýµ½k£¬Èç¹û²»ÄÜÕû³ý¾ÍÊÇËØÊý
 				if(i%j==0){
 					break;
 				}
@@ -19,6 +19,6 @@ public class Prime {
 				}
 			}
 		}
-		System.out.println("å…±æœ‰"+num+"ä¸ªç´ æ•°");
+		System.out.println("¹²ÓÐ"+num+"¸öËØÊý");
 	}
 }
