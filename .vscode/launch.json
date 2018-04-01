@@ -4,17 +4,17 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-    {
-        "type": "java",
-        "name": "JavaDebug (Launch)",
-        "request": "launch",
-        "cwd": "${workspaceFolder}",
-        "console": "internalConsole",
-        "stopOnEntry": false,
-        "mainClass": "",
-        "args": ""
-    },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "IfDemo",
+            "projectName": "Java",
+            "args": ""
+        },
         {
             "type": "java",
             "name": "Debug (Launch)-InnerClass<Java>",
@@ -35,14 +35,14 @@
             "stopOnEntry": false,
             "mainClass": "practice.Brunch",
             "projectName": "Java",
-            "args": "1"
+            "args": ""
         },
         {
             "type": "java",
             "name": "Debug (Launch)-Four<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "practice.Four",
             "projectName": "Java",
@@ -68,7 +68,7 @@
             "stopOnEntry": false,
             "mainClass": "practice.Month",
             "projectName": "Java",
-            "args": "12"
+            "args": ""
         },
         {
             "type": "java",
@@ -90,7 +90,7 @@
             "stopOnEntry": false,
             "mainClass": "practice.Score",
             "projectName": "Java",
-            "args": "100"
+            "args": ""
         },
         {
             "type": "java",
