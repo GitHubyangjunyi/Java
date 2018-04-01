@@ -10,9 +10,20 @@
             "name": "Debug (Launch)-IfDemo<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
+            "console": "externalTerminal",
             "stopOnEntry": false,
             "mainClass": "IfDemo",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GoToDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GoToDemo",
             "projectName": "Java",
             "args": ""
         },
@@ -95,12 +106,12 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-TestOverride<Java>",
+            "name": "Debug (Launch)-TestOverrideSuper<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "practice.TestOverride",
+            "mainClass": "TestOverrideSuper",
             "projectName": "Java",
             "args": ""
         },

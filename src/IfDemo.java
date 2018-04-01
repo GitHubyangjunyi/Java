@@ -11,5 +11,6 @@ public class IfDemo{
         else{
             System.out.println("成绩不及格!");            
         }
+        input.close();
     }
 }
