@@ -29,6 +29,28 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-test<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "test",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArrayDefine<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ArrayDefine",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-InnerClass<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
