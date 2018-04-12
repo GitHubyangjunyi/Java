@@ -2,39 +2,47 @@
     // 使用 IntelliSense 了解相关属性。 
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    //ABCDEFGHIJKLMNOPQRSTUVWXYZ
     "version": "0.2.0",
     "configurations": [
 
         {
             "type": "java",
-            "name": "Debug (Launch)-IfDemo<Java>",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AbstractExtends<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "console": "externalTerminal",
+            "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "IfDemo",
+            "mainClass": "AbstractExtends",
             "projectName": "Java",
             "args": ""
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-GoToDemo<Java>",
+            "name": "Debug (Launch)-AbstractInterface<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "GoToDemo",
+            "mainClass": "AbstractInterface",
             "projectName": "Java",
             "args": ""
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-test<Java>",
+            "name": "Debug (Launch)-AnonymousClass<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "test",
+            "mainClass": "AnonymousClass",
             "projectName": "Java",
             "args": ""
         },
@@ -51,6 +59,83 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-ClassDestory<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ClassDestory",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DefaultAdapter1<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "DefaultAdapter1",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ExceptionSelfDefined<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "stopOnEntry": false,
+            "mainClass": "ExceptionSelfDefined",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FinalCircle<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "FinalCircle",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GoToDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GoToDemo",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HuiWenNumber<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "stopOnEntry": false,
+            "mainClass": "practice.HuiWenNumber",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "stopOnEntry": false,
+            "mainClass": "IfDemo",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-InnerClass<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -62,23 +147,45 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Brunch<Java>",
+            "name": "Debug (Launch)-InnerClass2<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "practice.Brunch",
+            "mainClass": "InnerClass2",
             "projectName": "Java",
-            "args": "100"
+            "args": ""
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Four<Java>",
+            "name": "Debug (Launch)-InnerGetOuter<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "practice.Four",
+            "mainClass": "InnerGetOuter",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterfaceImplements<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "InterfaceImplements",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterfaceImplements2<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "InterfaceImplements2",
             "projectName": "Java",
             "args": ""
         },
@@ -102,6 +209,39 @@
             "stopOnEntry": false,
             "mainClass": "practice.Month",
             "projectName": "Java",
+            "args": "12"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ObjectEquals<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ObjectEquals",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OuterClass<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "OuterClass",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PI<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "PI",
+            "projectName": "Java",
             "args": ""
         },
         {
@@ -123,6 +263,28 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "practice.Score",
+            "projectName": "Java",
+            "args": "100"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StaticDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "StaticDemo",
+            "projectName": "Java",
+            "args": "100"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchTwoNumberWithoutTemp<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "practice.SwitchTwoNumberWithoutTemp",
             "projectName": "Java",
             "args": ""
         },
@@ -150,10 +312,58 @@
         },
         {
             "type": "java",
-            "name": "Debug (Attach)",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": 0
-        }
+            "name": "Debug (Launch)-ThrowsTest<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThrowsTest",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThrowsTest2<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThrowsTest2",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TryCatch<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TryCatch",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TryCatchReturn<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TryCatchReturn",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TurnUp<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "stopOnEntry": false,
+            "mainClass": "TurnUp",
+            "projectName": "Java",
+            "args": ""
+        },
     ]
 }

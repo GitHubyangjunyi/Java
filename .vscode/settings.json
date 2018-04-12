@@ -1,2 +1,36 @@
 {
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "editor.renderControlCharacters": true,
+    "team.showWelcomeMessage": false,
+    "csharp.format.enable": false,
+    "gitlens.keymap": "alternate",
+    "files.autoGuessEncoding": true,
+    "code-runner.runInTerminal": true,
+    "java.home": "C:\\Program Files\\Java\\jdk-9.0.4",
+    "editor.smoothScrolling": true,
+    "debug.inlineValues": true,
+    "[java]": {
+        
+    },
+    "debug.openDebug": "openOnSessionStart",
+    "debug.showInStatusBar": "always",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "files.encoding": "gbk",  
 }

@@ -1,18 +1,18 @@
-public class GoToDemo{
+public class GoToDemo {
     public static void main(String[] args) {
-        mxl:for(int i=0;i<100;i++){
-            for(int j=0;j<10;j++){
-                if (j%2==0) {
-                    System.out.println(j+"\t");
+        mxl: for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (j % 2 == 0) {
+                    System.out.println(j + "\t");
                 } else {
                     break mxl;
                 }
             }
         }
-        mxl:for(int i=0;i<100;i++){
-            for(int j=0;j<10;j++){
-                if (j%2==0) {
-                    System.out.println(j+"\t");
+        mxl: for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (j % 2 == 0) {
+                    System.out.println(j + "\t");
                 } else {
                     break mxl;
                 }
