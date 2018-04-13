@@ -6,6 +6,7 @@ public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         int length=in.nextInt();
         int width=in.nextInt();
+        in.close();
         if (length<=3||length>=10||width<=2||width>=6) {
             throw new InputException("输入数值不在指定范围内");
         }
