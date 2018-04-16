@@ -59,6 +59,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-ArrayDemo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ArrayDemo",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-ClassDestory<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
