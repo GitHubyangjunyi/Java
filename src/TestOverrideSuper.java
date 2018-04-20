@@ -28,7 +28,7 @@ class Cat extends Mammal {
 		this.name = catname;
 	}
 
-	public Cat(String name, String catname) {//会隐式调用父类构造方法
+	public Cat(String name, String catname) {// 会隐式调用父类构造方法
 		super.name = name;
 		this.name = catname;
 	}
@@ -76,8 +76,8 @@ public class TestOverrideSuper {
 
 	public static void main(String[] args) {
 		System.out.println("----Cat----");
-		Cat cat = new Cat();//实例化时会调用父类的构造方法
-		//这是因为如果没有明确使用super关键字,子类构造方法中会隐式使用super()调用父类的默认构造方法并且第一个执行
+		Cat cat = new Cat();// 实例化时会调用父类的构造方法
+		// 这是因为如果没有明确使用super关键字,子类构造方法中会隐式使用super()调用父类的默认构造方法并且第一个执行
 		cat.name = "xxx";
 		Cat cat1 = new Cat("mname1cat", "catname1");
 		cat1.call();
@@ -89,15 +89,15 @@ public class TestOverrideSuper {
 		System.out.println("----Sheep----");
 		Sheep sheep = new Sheep("mname3sheep", "sheepname3", 4);
 		sheep.call();
-		Mammal c=new Cat();
+		Mammal c = new Cat();
 		c.call();
 	}
 }
-//子类可以继承父类中访问权限设置为public/protected/default的成员属性和成员方法
-//但不能继承权限未private的私有成员属性和成员方法,且不能继承父类的构造方法
-//如果父类自己定义了构造方法,即没有使用默认的构造方法,子类不能使用父类的构造方法
-//当一个子类使用super()时就是调用直接父类的无参数的构造方法
-//子类不能继承父类的构造方法,要调用父类的构造方法必须在子类构造方法方法体第一行使用super()
-//super用来调用被子类隐藏的父类成员
-//用来调用父类的构造方法
-//只有当父类方法是可访问的,子类才能重写该方法,且子类重写方法时权限不能缩小,子类中重写方法不能抛出新异常
+// 子类可以继承父类中访问权限设置为public/protected/default的成员属性和成员方法
+// 但不能继承权限未private的私有成员属性和成员方法,且不能继承父类的构造方法
+// 如果父类自己定义了构造方法,即没有使用默认的构造方法,子类不能使用父类的构造方法
+// 当一个子类使用super()时就是调用直接父类的无参数的构造方法
+// 子类不能继承父类的构造方法,要调用父类的构造方法必须在子类构造方法方法体第一行使用super()
+// super用来调用被子类隐藏的父类成员
+// 用来调用父类的构造方法
+// 只有当父类方法是可访问的,子类才能重写该方法,且子类重写方法时权限不能缩小,子类中重写方法不能抛出新异常
