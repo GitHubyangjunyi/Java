@@ -6,7 +6,8 @@ class ObjectA {
         i = n;
     }
 
-    public boolean equals(Object o) {//重写判断规则
+    @Override
+	public boolean equals(Object o) {//重写判断规则
         if (o instanceof ObjectA) {//instanceof关键字,o是不是ObjectA的对象
             if (i == ((ObjectA) o).i) {
                 return true;

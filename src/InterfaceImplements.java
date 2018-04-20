@@ -15,10 +15,12 @@ class Person implements Action {
 		name = "xx";
 	}*/
 
+	@Override
 	public void walk() {
 		System.out.println(name + "is walking");
 	}
 
+	@Override
 	public void run() {
 		System.out.println(name + "is running");
 	}

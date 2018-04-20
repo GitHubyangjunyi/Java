@@ -14,12 +14,14 @@ class Rectangular1 implements Figure1 {
         this.width = width;
     }
 
-    public double calculateArea() {//实现抽象方法
+    @Override
+	public double calculateArea() {//实现抽象方法
         double area = length * width;
         return area;
     }
 
-    public void showArea() {
+    @Override
+	public void showArea() {
         double area = calculateArea();
         System.out.println("此图形的面积为" + area);
     }

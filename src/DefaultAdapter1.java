@@ -11,23 +11,29 @@ interface Target {
 }
 
 class DefaultAdapter implements Target {
+	@Override
 	public void f1() {
 	}
 
+	@Override
 	public void f2() {
 	}
 
+	@Override
 	public void f3() {
 	}
 
+	@Override
 	public void f4() {
 	}
 
+	@Override
 	public void f5() {
 	}
 }
 
 class MyInteresting extends DefaultAdapter {
+	@Override
 	public void f5() {
 		System.out.println("只实现第五的方法");
 	}

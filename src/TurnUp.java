@@ -5,13 +5,15 @@ interface Shape1 {
 }
 
 class Circlr1 implements Shape1 {
-    public void erase() {
+    @Override
+	public void erase() {
         System.out.println("Circlr1.erase");
     }
 }
 
 class Line1 implements Shape1 {
-    public void erase() {
+    @Override
+	public void erase() {
         System.out.println("Line1.erase");
     }
 }
@@ -65,7 +67,8 @@ class PublicOveride extends PrivateOveride {
         System.out.println("PublicOveride public fm");
     }
 
-    protected void f() {
+    @Override
+	protected void f() {
         fm();
         super.f();
         System.out.println("PublicOveride public f");
@@ -93,7 +96,8 @@ abstract class Device {
 // }
 
 class MP3 extends Device {
-    public void dataread() {
+    @Override
+	public void dataread() {
         Scanner in = new Scanner(System.in);
         String data = in.next();
         in.close();//±ÜÃâ³öÏÖÒì³£×¢ÊÍµô
@@ -102,7 +106,8 @@ class MP3 extends Device {
 }
 
 class Upan extends Device {
-    public void dataread() {
+    @Override
+	public void dataread() {
         Scanner in = new Scanner(System.in);
         String data = in.next();
         in.close();//±ÜÃâ³öÏÖÒì³£×¢ÊÍµô    

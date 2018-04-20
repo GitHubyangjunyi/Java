@@ -33,6 +33,7 @@ class Cat extends Mammal {
 		this.name = catname;
 	}
 
+	@Override
 	public void call() {
 		super.call();
 		System.out.println("Cat.call super.name:" + super.name + "    " + "this.name:" + this.name);
@@ -48,6 +49,7 @@ class Dog extends Mammal {
 		this.name = dogname;
 	}
 
+	@Override
 	public void call() {
 		super.call();
 		System.out.println("Dog.call super.name:" + super.name + "    " + "this.name:" + this.name);
@@ -63,6 +65,7 @@ class Sheep extends Mammal {
 		this.name = sheepname;
 	}
 
+	@Override
 	public void call() {
 		super.call();
 		System.out.println("Sheep.call super.name:" + super.name + "    " + "this.name:" + this.name);

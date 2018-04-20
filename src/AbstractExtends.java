@@ -17,6 +17,7 @@ class Rectangular extends Figure {
 		this.width = width;
 	}
 
+	@Override
 	public double calculateArea() {//实现抽象方法
 		double area = length * width;
 		return area;

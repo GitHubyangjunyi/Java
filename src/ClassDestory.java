@@ -6,7 +6,8 @@ public class ClassDestory {
         System.out.println("fun方法中清理内存");
         System.gc();
     }
-    public void finalize(){
+    @Override
+	public void finalize(){
         System.out.println("对象被清理");
     }
     public static void main(String[] args) {

@@ -24,26 +24,32 @@ class Personx implements Useleg, Usemouth, Useear, Useeye {
 	String address;
 	String ID;
 
+	@Override
 	public void run() {
 		System.out.println("I am running");
 	}
 
+	@Override
 	public void walk() {
 		System.out.println("I am walking");
 	}
 
+	@Override
 	public void speak() {
 		System.out.println("I am speaking");
 	}
 
+	@Override
 	public void eat() {
 		System.out.println("I am eating");
 	}
 
+	@Override
 	public void hearMusic() {
 		System.out.println("I am listening to music");
 	}
 
+	@Override
 	public void seeFilm() {
 		System.out.println("I am seeing a film");
 	}
