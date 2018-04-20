@@ -2,7 +2,7 @@
 public class ThrowsTest2 {
     static int x=0;
     static int y=0;
-    public static void testEx() throws Exception {
+    public static void testEx() throws ArithmeticException {
         if (x!=0) {
             y=100/x;
         }
@@ -12,8 +12,8 @@ public class ThrowsTest2 {
     }
         public static void main(String[] args) {
             try {
-                //testEx();
-                System.out.println("xxxx");
+                testEx();
+                System.out.println("xxxx");//这一语句不会执行
             } catch (ArithmeticException e) {
                 System.out.println("除数不能为零");
             }

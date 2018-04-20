@@ -13,10 +13,6 @@ class FinalCircle{
         System.out.println(circle.area());
     }
 }
-
-
-
-
 //final修饰的类不能被继承
 //final修饰的值不能被修改,变量被声明为final时必须初始化
 //final修饰的方法不能被重写
