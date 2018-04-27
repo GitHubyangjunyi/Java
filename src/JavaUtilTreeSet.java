@@ -2,18 +2,18 @@ import java.util.*;
 
 public class JavaUtilTreeSet {
 	public static void main(String[] args) {
-		Set set=new TreeSet();
+		Set<String> set = new TreeSet<String>();
 		set.add("justin");
 		set.add("caterpillar");
 		set.add("momor");
 		set.add("justin");
-		Iterator iterator=set.iterator();
+		Iterator<String> iterator = set.iterator();
 		while (iterator.hasNext()) {
-			System.out.println(iterator.next()+"");
+			System.out.println(iterator.next() + "");
 		}
 		System.out.println();
 	}
-	//由于集合中式String类型的元素,所以输出结果按Unicode编码自动排序
+	// 由于集合中式String类型的元素,所以输出结果按Unicode编码自动排序
 
 }
 // 二.Set集合

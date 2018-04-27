@@ -2,19 +2,19 @@ import java.util.*;
 
 public class JavaUtilTreeMap {
 	public static void main(String[] args) {
-		Map map=new TreeMap();
+		Map<String, String> map = new TreeMap<String, String>();
 		map.put("1", "Monday");
 		map.put("3", "Wednesday");
 		map.put("4", "Thursday");
 		map.put("2", "Tuesday");
-		Set keys=map.keySet();
-		Iterator it=keys.iterator();
+		Set<String> keys = map.keySet();
+		Iterator<String> it = keys.iterator();
 		while (it.hasNext()) {
-			String key=(String)it.next();
-			String value=(String)map.get(key);
-			System.out.println(key+" "+value);
+			String key = it.next();
+			String value = map.get(key);
+			System.out.println(key + " " + value);
 		}
-		//TreeMap会对四个String类型对象的键1234进行排序,尽管输入时没有排序,但是输出时自动排序
+		// TreeMap会对四个String类型对象的键1234进行排序,尽管输入时没有排序,但是输出时自动排序
 	}
 
 }

@@ -2,19 +2,22 @@ import java.util.Hashtable;
 
 public class Generic {
 	public static void main(String[] args) {
-		Testfx<String,String> t=new Testfx<String,String>();
-		t.put("key","value");
-		String s=t.get("key");
+		Testfx<String, String> t = new Testfx<String, String>();
+		t.put("key", "value");
+		String s = t.get("key");
 		System.out.println(s);
 	}
 
 }
-class Testfx<C,Q>{//类的参数时C和Q,传入分值时String类型,这个类没有特定的待处理型别,更像是一个模板
-	public Hashtable<C,Q> h=new Hashtable<C,Q>();
-	public void put(C c,Q q){
+
+class Testfx<C, Q> {// 类的参数时C和Q,传入分值时String类型,这个类没有特定的待处理型别,更像是一个模板
+	public Hashtable<C, Q> h = new Hashtable<C, Q>();
+
+	public void put(C c, Q q) {
 		h.put(c, q);
 	}
-	public Q get(C c){
+
+	public Q get(C c) {
 		return h.get(c);
 	}
 }

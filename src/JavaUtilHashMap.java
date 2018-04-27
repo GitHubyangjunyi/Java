@@ -2,25 +2,25 @@ import java.util.*;
 
 public class JavaUtilHashMap {
 	public static void main(String[] args) {
-		HashMap register=new HashMap();
-		register.put("1","A");// 方法put()可以初始化Map集合的对象
-		register.put("2","B");// 此外Map的键不可能重复,所以可以用Set数据结构来存储
-		register.put("3","C");// 而Map的值有可能重复,所以用Collection来存储
-		register.put("4","D");
-		System.out.println("The HashMap holds"+register.size()+"elements");
+		HashMap<String, String> register = new HashMap<String, String>();
+		register.put("1", "A");// 方法put()可以初始化Map集合的对象
+		register.put("2", "B");// 此外Map的键不可能重复,所以可以用Set数据结构来存储
+		register.put("3", "C");// 而Map的值有可能重复,所以用Collection来存储
+		register.put("4", "D");
+		System.out.println("The HashMap holds" + register.size() + "elements");
 		System.out.println(register);
 		System.out.println("The keys are:");
-		Set s=register.keySet();
-		Iterator ikey=s.iterator();
+		Set<String> s = register.keySet();
+		Iterator<String> ikey = s.iterator();
 		while (ikey.hasNext()) {
-			System.out.println("\t"+ikey.next());
+			System.out.println("\t" + ikey.next());
 		}
 		System.out.println("\n");
 		System.out.println("The values are:");
-		Collection sv=register.values();
-		Iterator ivalue=sv.iterator();
+		Collection<String> sv = register.values();
+		Iterator<String> ivalue = sv.iterator();
 		while (ivalue.hasNext()) {
-			System.out.println("\t"+ivalue.next());
+			System.out.println("\t" + ivalue.next());
 		}
 	}
 
