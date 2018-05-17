@@ -3,8 +3,8 @@ import java.io.*;
 public class FileClass {
     public static void main(String[] args) {
         // 文件类的几种构造方法
-        File file1 = new File("C:/Users/12090/JavaSource/Java/targetfile/delete.txt");
-        File dir1 = new File("C:/Users/12090/JavaSource/Java/targetfile");
+        File file1 = new File("./targetfile/delete.txt");
+        File dir1 = new File("./targetfile");
         File file2 = new File(dir1, "a.txt");
         System.out.println(file2.exists() + "\n");
         if (file1.exists()) {

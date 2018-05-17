@@ -2,7 +2,31 @@ import java.io.*;
 
 public class FaceByteIO {
     public static void main(String[] args) {
-        String from = "";
+        String from = "./targetfile/in.txt";
+        String to="./targetfile/out.txt";
+        FileInputStream in=null;
+        FileOutputStream out=null;
+        try {
+            in=new FileInputStream(from);
+            out=new FileOutputStream(to);
+            int i=0;
+            while ((i=in.read())!=-1) {//每次从文件读取一个字节,如果返回-1表示文件结束
+                out.write(i);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (IOException e) {
+            e.printStackTrace();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            try {
+                in.close();
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
     
 }
