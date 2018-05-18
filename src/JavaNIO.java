@@ -1,9 +1,23 @@
 import java.io.*;
 import java.nio.*;
+import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
 
 public class JavaNIO {
-    public static void main(String[] args) {
-
+    @SuppressWarnings("resource")
+	public static void main(String[] args) {
+    	try{
+    		FileChannel fc=new FileInputStream("./targetfile/JavaNIO.txt").getChannel();
+    		ByteBuffer buf=ByteBuffer.allocate(1024);
+    		fc.read(buf);
+    		buf.flip();
+    		fc.close();
+    		String encoding=System.getProperty("file.encoding");
+    		CharBuffer cb=Charset.forName(encoding).decode(buf);
+    		System.out.println(cb);
+    	}catch (Exception e) {
+    		
+    	}
     }
 
 }
@@ -22,93 +36,48 @@ public class JavaNIO {
 // 可以看出,Java只能从面向字节的I/O类中获取Channel,而不能从面向字符的I/O类中获取Channel
 // 相反的是,通过使用java.nio.channels,Channel类中提供的方法,可以从Channel中获取Reader和Writer
 // NIO中的缓冲
-
 // 抽象的Buffer类是java.nio包支持缓冲区的基础,而ByteBuffer就是具体与通通交互的缓冲区的代表
 // ByteBuffer的工作方式就像内存中用于读写基本数据类型的RandomAccessFile
-// 与RandomAccessFile一样,使用
-(读/写)都是在当前某个位置发生。
-执行读写这两个
-经的内容而会读到刚才所写内容之后的费
-所以在写操作之后进行读操
-作不会读到刚才所写的内容，而
-据。Bffer提供四个指示方法，用于访向线性结构。
-capacity():表明缓冲区的大小。
-城反值
-多少字节，或者用limit(int newlLimi
-limit():说明到目前为止已经往缓冲区填了
-来改变这个限制。
-postionO返回当前的位置，以执行下一个读/写操作。
-mark();为了稍后用ee()进行重新设置面记住某个位置。
-缓冲区的基本操作是ge(和pu(),用以从缓冲区中读取或向缓冲区中放人数据。包
-ByeBufter只能处理简单的数据类型，然面，这些方法在子类中都是针对每种数据类型的
-特定方法。
-ByteBuffer类针对字节缓冲区定义了以下六类操作。
-读写单个字节的绝对和相对get()和put()方法。
-将此缓冲区的连续字节序列传输到数组中的相对批量get()方法。
-将byte数组或其他字节缓冲区中的连续字节序列传输到此缓冲区的相对批量put()
-方法。
-读写其他基本类型值，并按照特定的字节顺序在字节序列之间转换这些值的绝对和
-相对get()和put()方法。
-创建视图缓冲区的方法，这些方法允许将字节缓冲区视为包含其他基本类型值的缓
-冲区。
-。对字节缓冲区进行压缩、重复和分拆的方法。
-为了最大限度地提升oe系统V/O的速度，NIO实现了直接与非直接缓冲区
-Breder节缓中区要么是直接的，要么是非直接的。如果为直接字节缓冲区、则加
-建报机会尽最大努力直核在此领中区上执行本机10操作。也就是说，在每次的用来的
-作系统的一个本机10操作之前(或之后)，虚报机都会尽最进
-免将缓冲区的内容复制到中
-间缓冲区中(或从中间缓冲区中复制内容)，
-直接字节缓冲区可以通过调用此类的ilaeDoee
-方法来创建。此方法返回的缓冲
-区进行分配和取消分配所需成本通常高于丰
-直接缓冲区。
-规的垃圾回收堆之外，因此，它们对应用程序
-序的内存需求
-该中区。直接缓冲区的内容可以驻留在常
-以，建议将直接缓冲区主要分配给那些易受其础南来量造成的影响可能并不明显。
-统的
-缓冲区。一般情况下，最好仅在直接缓冲区能大知的本机I/O操作影响的大型、持久的
-序性
-方面带来明显好处时分配它们、
-
-我的手机 2018/5/18 13:58:19
-N1O提供了七种特定的Buffer类型，每一种类型对应着一一种基本数据类型。
-ByteBuffer.
-CharBuffer.
-DoubleBuffer.
-FloatBuffer.
-IntBuffer.
-LongBuffer.
-ShortBuffer.
-当然，只有ByteBuffer才能与通道直接交互。因此，当应用程序从通道中接收到一个
-ByteBuffer后，为了读取其中的字符串，必须首先按照字节的方式读取内容，然后再构造字
-符串，这是一种非常原始的方式。为了能够更加方便地操作ByteBuffer,ByteBuffer提供了
-视图缓冲区功能。所谓视图缓冲区就是通过asCharBuffer( )、asIntBuffer()等方法将
-ByteBuffer转换为另外一种模式，例如CharBuffer,通过视图,完全可以按照CharBuffer提
-供的方法来操作缓冲区。但是这里并没有进行任何数据复制，CharBuffer视图和
-ByteBuffer共享同一块数据区域。
-[例8.9Ln演示如何利用NIO从一个文本文件中读取信息并打印到标准输出上。
-import java. io. FileInputStream;
-import java. nio. ByteBuffer;
-import java. nio. CharBuffer;
-04vio
-nels. FileChannel;
-import java. nio. chann
-import java. nio. charset. Charset;
-public class BuffrTest
-inistrinal
-throws Except ion{
-public static void main(Stringl] args)throwscepion
-PieChamnefe ne ltptt:t/3w/m t") gttee
-ByteBufferbutf 。ByteBaffer llcate(l024)
-fc. read(buf);
-buf. flip();
-fc. close();
-string ecdin, Syete etpetdieie
-CharBuffercb =
-Charset orlaledine) dede(but);
-System. out. println(cb);
-1024B的空间，通过通道FlChannel的
+// 与RandomAccessFile一样,使用ByteBuffer时，所执行的下一个操作(读/写)都是在当前某个位置发生
+// 执行读写这两个操作中的任何一个都会改变那个位置,所以在写操作之后进行读操作不会读到刚才所写的内容
+// 而会读到刚才所写内容之后的数据
+/*
+Buffer提供四个指示方法,用于访问线性结构
+capacity():表明缓冲区的大小
+limit():说明到目前为止已经往缓冲区填入多少字节,或者用limit(int newLimit)来改变这个限制
+position():返回当前的位置,以执行下一个读/写操作
+mark():为了稍后用rest()进行重新设置而记住某个位置
+缓冲区的基本操作是get()和put(),用以从缓冲区中读取或向缓冲区中放人数据
+ByteBuffer只能处理简单的数据类型
+ByteBuffer类针对字节缓冲区定义了以下六类操作:
+1.读写单个字节的绝对和相对get()和put()方法
+2.将此缓冲区的连续字节序列传输到数组中的相对批量get()方法
+3.将byte数组或其他字节缓冲区中的连续字节序列传输到此缓冲区的相对批量put()方法
+4.读写其他基本类型值,并按照特定的字节顺序在字节序列之间转换这些值的绝对和相对get()和put()方法
+5.创建视图缓冲区的方法,这些方法允许将字节缓冲区视为包含其他基本类型值的缓冲区
+6.对字节缓冲区进行压缩、重复和分拆的方法
+// 为了最大限度地提升Java系统I/O的速度,NIO实现了直接与非直接缓冲区
+ByteBuffer字节缓冲区要么是直接的,要么是非直接的,如果为直接字节缓冲区,则Java虚拟机会尽最大努力直接在此缓冲区上执行本机I/O操作
+// 也就是说,在每次调用基础操作系统的一个本机I/O操作之前(或之后),虚报机都会尽量避免将缓冲区的内容复制到中间缓冲区中(或从中间缓冲区中复制内容)
+// 直接字节缓冲区可以通过调用此类的allocateDirect方法来创建,此方法返回的缓冲区进行分配和取消分配所需成本通常高于非直接缓冲区
+// 直接缓冲区的内容可以驻留在常规的垃圾回收堆之外,因此,它们对应用程序的内存需求量造成的影响可能并不明显
+// 建议将直接缓冲区主要分配给那些易受基础系统的本机I/O操作影响的大型的持久的缓冲区
+// 一般情况下,最好仅在直接缓冲区能在程序性能方面带来明显好处时分配它们
+// N1O提供了七种特定的Buffer类型,每一种类型对应着一种基本数据类型
+ByteBuffer
+CharBuffer
+DoubleBuffer
+FloatBuffer
+IntBuffer
+LongBuffer
+ShortBuffer
+只有ByteBuffer才能与通道直接交互,当应用程序从通道中接收到一个ByteBuffer后
+// 为了读取其中的字符串必须首先按照字节的方式读取内容然后再构造字符串,是一种非常原始的方式
+// 为了能够更加方便地操作ByteBuffer,ByteBuffer提供了视图缓冲区功能
+// 所谓视图缓冲区就是通过asCharBuffer()、asIntBuffer()等方法将ByteBuffer转换为另外一种模式
+// 例如CharBuffer,通过视图,完全可以按照CharBuffer提供的方法来操作缓冲区
+// 但是这里并没有进行任何数据复制,CharBuffer视图和ByteBuffer共享同一块数据区域
+演示如何利用NIO从一个文本文件中读取信息并打印到标准输出上
 从这个例子中可以
 看到,ByteBuffer申请了
 的fip()方法让缓冲区的起始位
@@ -265,4 +234,4 @@ NIO为Java
 率，更精细的I/O控制，但也比传
 ;处也是巨大的
 理解了NIO的精髓，所带来的益处
-Java的I/O操作
+Java的I/O操作*/
