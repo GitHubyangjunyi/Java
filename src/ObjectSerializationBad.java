@@ -1,16 +1,16 @@
 import java.io.*;
 
 public class ObjectSerializationBad {
-    public static void main(String[] args) {
-        try {
-            ObjectInputStream in = new ObjectInputStream(new FileInputStream("./ObjectSerializationDir/user.dat"));
-            Object obj = in.readObject();
-            System.out.println(obj.getClass());
-            in.close();
-        } catch (Exception e) {
-            System.out.println(e.toString());//java.lang.ClassNotFoundException: User
-        }
-    }
+	public static void main(String[] args) {
+		try {
+			ObjectInputStream in = new ObjectInputStream(new FileInputStream("./ObjectSerializationDir/user.dat"));
+			Object obj = in.readObject();
+			System.out.println(obj.getClass());
+			in.close();
+		} catch (Exception e) {
+			System.out.println(e.toString());// java.lang.ClassNotFoundException: User
+		}
+	}
 
 }
 // 事实上Java的对象序列化还不是很完美,例如

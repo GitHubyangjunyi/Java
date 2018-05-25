@@ -1,6 +1,6 @@
 import java.io.*;
 
-//读取硬盘上的一个文件的内容,将其复制到另一文件中,效率低
+//读取硬盘上的一个文件的内容,将其复制到另一文件中,效率低,高效率版本FaceByteIOHighEfficiency
 public class FaceByteIO {
 	public static void main(String[] args) {
 		String from = "./targetfile/in.txt";

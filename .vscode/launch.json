@@ -15,6 +15,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-AAAAReadMe<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "AAAAReadMe",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-AbstractExtends<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -142,6 +153,17 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "FaceByteIO",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FaceByteIOHighEfficiency<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "FaceByteIOHighEfficiency",
             "projectName": "Java",
             "args": ""
         },
@@ -389,6 +411,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-MathTest<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "practice.MathTest",
+            "projectName": "Java",
+            "args": "12"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-Month<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -461,6 +494,17 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "PI",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReaderWriter<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ReaderWriter",
             "projectName": "Java",
             "args": ""
         },
