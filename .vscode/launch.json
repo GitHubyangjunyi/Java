@@ -499,17 +499,6 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-ReaderWriter<Java>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "ReaderWriter",
-            "projectName": "Java",
-            "args": ""
-        },
-        {
-            "type": "java",
             "name": "Debug (Launch)-Prime<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -521,12 +510,34 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-ReaderWriter<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ReaderWriter",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-Score<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "practice.Score",
+            "projectName": "Java",
+            "args": "100"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SQLServerDB<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SQLServerDB",
             "projectName": "Java",
             "args": "100"
         },
@@ -571,6 +582,50 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "TestOverrideSuper",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreadOperate<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadOperate",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreadSimple<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadSimple",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreadSyncTicketSell<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadSyncTicketSell",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreadSyncTicketSellTwo<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadSyncTicketSellTwo",
             "projectName": "Java",
             "args": ""
         },
