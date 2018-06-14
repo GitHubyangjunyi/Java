@@ -6,7 +6,8 @@ public class OuterClass {
 		int size = 33;// 临时局部变量size
 		class InnerClass {
 			public String output() {// 对局部变量size访问非法
-				return ("外部类count=" + count + "\n" + "局部变量size=" + size + "\n" + "参数finalint=" + finalint);// 局部变量能访问到书上说访问不了???
+				return ("外部类count=" + count + "\n" + "局部变量size=" + size + "\n" + "参数finalint=" + finalint);
+				// 局部变量能访问到书上说访问不了???
 			}
 		}
 		InnerClass inner = new InnerClass();

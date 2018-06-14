@@ -11,8 +11,7 @@
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,
     "editor.mouseWheelZoom": true,

@@ -5,6 +5,19 @@ public class JavaUtil {
 	}
 
 }
+// Collection
+// ├List
+// │├LinkedList
+// │├ArrayList
+// │└Vector
+// │ └Stack
+// └Set
+//
+// Map
+// ├Hashtable
+// ├HashMap
+// └WeakHashMap
+//
 // 在java.util包中提供了一些实用的类及其方法,例如日期类(Data)/日历类(Calendar)用来产生和获取日期及时间
 // 随机数类(Random)产生各种类型的随机数
 // 还提供了堆栈(Stack)/向量(Vector)/集合框架(Collection)/位集合(Bitset)以及哈希表(Hashtable)

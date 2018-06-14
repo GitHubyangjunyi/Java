@@ -4,7 +4,7 @@ public class JavaIOEncoding {
 
 	public static void main(String[] args) {
 		try {
-			String str = "Ñî¿¡ÒÕ";
+			String str = "xxxx";
 			byte[] b1 = str.getBytes();
 			byte[] b2 = str.getBytes("GBK");
 			byte[] b3 = str.getBytes("UTF-8");

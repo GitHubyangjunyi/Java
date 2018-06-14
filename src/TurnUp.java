@@ -68,7 +68,7 @@ class PublicOveride extends PrivateOveride {
 	}
 
 	@Override
-	protected void f() {
+	protected void f() {// 不能缩小访问范围,改成私有方法出错
 		fm();
 		super.f();
 		System.out.println("PublicOveride public f");

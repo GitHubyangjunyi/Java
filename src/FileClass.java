@@ -2,7 +2,7 @@ import java.io.*;
 
 public class FileClass {
 	public static void main(String[] args) {
-		// ÎÄ¼şÀàµÄ¼¸ÖÖ¹¹Ôì·½·¨
+		// æ–‡ä»¶ç±»çš„å‡ ç§æ„é€ æ–¹æ³•
 		File file1 = new File("./targetfile/delete.txt");
 		File dir1 = new File("./targetfile");
 		File file2 = new File(dir1, "a.txt");
@@ -20,11 +20,11 @@ public class FileClass {
 			for (int i = 0; i < files.length; i++) {
 				File f = files[i];
 				if (f.isFile()) {
-					System.out.println("ÎÄ¼şÃû£º" + f.getAbsolutePath());
-					System.out.println("³¤¶È£º" + f.length());
-					System.out.println("¿ÉĞ´£º" + f.canWrite());
+					System.out.println("æ–‡ä»¶åï¼š" + f.getAbsolutePath());
+					System.out.println("é•¿åº¦ï¼š" + f.length());
+					System.out.println("å¯å†™ï¼š" + f.canWrite());
 				} else {
-					System.out.println("Ä¿Â¼Ãû£º" + f.getAbsolutePath());
+					System.out.println("ç›®å½•åï¼š" + f.getAbsolutePath());
 				}
 			}
 		} else {
@@ -33,5 +33,5 @@ public class FileClass {
 	}
 
 }
-// ÎÄ¼ş¼ĞÖ»ÊÇÒ»ÖÖÌØÊâµÄÎÄ¼ş,ÀïÃæ±£´æÁËÒ»×éÎÄ¼şµÄÃû×Ö
-// Ò»¸öFileÀà¶ÔÏó¿ÉÒÔÖ¸ÏòÒ»¸öÎÄ¼ş»òÎÄ¼ş¼Ğ,²»¹Ü´æ²»´æÔÚ
+// æ–‡ä»¶å¤¹åªæ˜¯ä¸€ç§ç‰¹æ®Šçš„æ–‡ä»¶,é‡Œé¢ä¿å­˜äº†ä¸€ç»„æ–‡ä»¶çš„åå­—
+// ä¸€ä¸ªFileç±»å¯¹è±¡å¯ä»¥æŒ‡å‘ä¸€ä¸ªæ–‡ä»¶æˆ–æ–‡ä»¶å¤¹,ä¸ç®¡å­˜ä¸å­˜åœ¨

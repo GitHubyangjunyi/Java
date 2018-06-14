@@ -554,6 +554,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-SuperTest<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "test.SuperTest",
+            "projectName": "Java",
+            "args": "100"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-SwitchTwoNumberWithoutTemp<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
