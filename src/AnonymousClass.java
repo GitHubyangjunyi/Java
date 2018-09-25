@@ -1,13 +1,68 @@
+interface PCI {// æ¥å£å®šä¹‰
 
-public class AnonymousClass {
-	public static void main(String[] args) {
-		System.out.println("Ã»ÓĞÊµÏÖ");
+	public void start();
+
+	public void stop();
+
+}
+
+class SoundCard implements PCI {// SoundCardå®ç°PCIæ¥å£
+
+	public void start() {
+		System.out.println("SoundCardstart");
+	}
+
+	public void stop() {
+		System.out.println("SoundCardstop");
 	}
 }
-// ÄäÃûÀàÊÇ²»ÄÜÓĞÃû³ÆµÄÀà,ËùÒÔÃ»ÓĞ°ì·¨Ö±½ÓÒıÓÃ,±ØĞëÔÚ´´½¨Ê±×÷ÎªnewÓï¾äµÄÒ»²¿·ÖÀ´ÉùÃ÷ÄäÃûÀà
-// new<Àà»ò½Ó¿Ú><ÀàµÄÖ÷Ìå>
-// ÕâÖÖĞÎÊ½µÄnewÓï¾ä´²¼ÜÒ»¸öĞÂµÄÄäÃûÀà,Ëü¶ÔÒ»¸ö¸ø¶¨µÄÀà½øĞĞÀ©Õ¹»òÕßÊµÏÖÒ»¸ö½Ó¿Ú
-// Ëü»¹´´½¨Ò»¸öÄäÃûÀàµÄÊµÀı²¢×÷ÎªÓï¾äµÄ½á¹û·µ»Ø
-// ĞèÒª×¢ÒâµÄÊÇ,ÄäÃûÀàµÄÉùÃ÷ÊÇÔÚ±àÒëÊ±½øĞĞµÄ,ÊµÀı»¯ÊÇÔÚÔËĞĞÊ±½øĞĞµÄÕâÒâÎ¶×ÅforÑ­»·
-// ÖĞµÄÒ»¸önewÓï¾ä»á´´½¨ÏàÍ¬ÄäÃûÀàµÄ¼¸¸öÊµÀı,¶ø²»ÊÇ´´½¨¼¸¸ö²»Í¬ÄäÃûÀàµÄÒ»¸öÊµÀı
-// ÄäÃûÀà¿ÉÒÔÊÓÎª·Ç¾²Ì¬µÄÄÚ²¿Àà,ÒòÎªËüÃÇ¾ßÓĞºÍ·½·¨ÄÚ²¿ÉùÃ÷µÄ·Ç¾²Ì¬ÄÚ²¿ÀàÒ»ÑùµÄÈ¨ÏŞºÍÏŞÖÆ
+
+class GraphicsCard implements PCI {// GraphicsCardå®ç°PCIæ¥å£
+	public void start() {
+		System.out.println("GraphicsCardstart");
+	}
+
+	public void stop() {
+		System.out.println("GraphicsCardstop");
+	}
+}
+
+public class AnonymousClass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SoundCard sc = new SoundCard();
+
+		GraphicsCard ggc = new GraphicsCard();
+
+		PCI AnonymousClassObj = new PCI() {// åŒ¿åå†…éƒ¨ç±»å®ç°ï¼Œå¯¹è±¡AnonymousClassObj
+			public void start() {
+				System.out.println("AnonymousClass");
+			}
+
+			public void stop() {
+				System.out.println("AnonymousClass");
+			}
+		};
+
+		ss(AnonymousClassObj);
+		ss(sc);
+		ss(ggc);
+	}
+
+	static void ss(PCI i) {
+		i.start();
+		i.stop();
+	}
+}
+// åŒ¿åç±»æ˜¯ä¸èƒ½æœ‰åç§°çš„ç±»,æ‰€ä»¥æ²¡æœ‰åŠæ³•ç›´æ¥å¼•ç”¨,å¿…é¡»åœ¨åˆ›å»ºæ—¶ä½œä¸ºnewè¯­å¥çš„ä¸€éƒ¨åˆ†æ¥å£°æ˜åŒ¿åç±»
+// new<ç±»æˆ–æ¥å£><ç±»çš„ä¸»ä½“>
+// è¿™ç§å½¢å¼çš„newè¯­å¥åºŠæ¶ä¸€ä¸ªæ–°çš„åŒ¿åç±»,å®ƒå¯¹ä¸€ä¸ªç»™å®šçš„ç±»è¿›è¡Œæ‰©å±•æˆ–è€…å®ç°ä¸€ä¸ªæ¥å£
+// å®ƒè¿˜åˆ›å»ºä¸€ä¸ªåŒ¿åç±»çš„å®ä¾‹å¹¶ä½œä¸ºè¯­å¥çš„ç»“æœè¿”å›
+// éœ€è¦æ³¨æ„çš„æ˜¯,åŒ¿åç±»çš„å£°æ˜æ˜¯åœ¨ç¼–è¯‘æ—¶è¿›è¡Œçš„,å®ä¾‹åŒ–æ˜¯åœ¨è¿è¡Œæ—¶è¿›è¡Œçš„è¿™æ„å‘³ç€forå¾ªç¯
+// ä¸­çš„ä¸€ä¸ªnewè¯­å¥ä¼šåˆ›å»ºç›¸åŒåŒ¿åç±»çš„å‡ ä¸ªå®ä¾‹,è€Œä¸æ˜¯åˆ›å»ºå‡ ä¸ªä¸åŒåŒ¿åç±»çš„ä¸€ä¸ªå®ä¾‹
+// åŒ¿åç±»å¯ä»¥è§†ä¸ºéé™æ€çš„å†…éƒ¨ç±»,å› ä¸ºå®ƒä»¬å…·æœ‰å’Œæ–¹æ³•å†…éƒ¨å£°æ˜çš„éé™æ€å†…éƒ¨ç±»ä¸€æ ·çš„æƒé™å’Œé™åˆ¶
