@@ -5,34 +5,34 @@ public class AAAAReadMe {
 	}
 
 }
-//////////////////////////////////////// Ä¬ÈÏ°ü////////////////////////////////////////
-// AAAAReadMe ËµÃ÷
-// AbstractExtends ³éÏóÀàÊµÏÖ
-// AbstractInterface ³éÏó½Ó¿Ú
-// AnonymousClass ÄäÃûÀà//Ã»ÓĞÊµÏÖ
-// ArrayDefine Êı×é
-// ArrayDemo Êı×é
-// ArraysMethodDemo Êı×é·½·¨Ó¦ÓÃ
-// ClassDestory ¶ÔÏóÇåÀí
-// DefaultAdapter1 ½Ó¿ÚÊÊÅäÆ÷
-// ExceptionSelfDefined ×Ô¶¨ÒåÒì³£
-// ExceptionSelfDefinedTest ×Ô¶¨ÒåÒì³£
-// ExceptionSelfDefinedTestTwo ×Ô¶¨ÒåÒì³£
-// FaceByteIO ÃæÏò×Ö½ÚµÄIO
-// FaceByteIOHighEfficiency ÎÄ¼ş¸´ÖÆ¸ßĞ§ÂÊ°æ±¾//¿ÕÏîÄ¿
-// FileClass ÎÄ¼şÀà
-// FinalCircle ¼Ì³Ğ
-// Generic ·ºĞÍ
-// GoToDemo GoToÓï¾ä
-// IfDemo IfÅĞ¶Ï
-// InnerClass ÄÚ²¿Àà
-// InnerClass2 ÄÚ²¿Àà
-// InnerGetOuter ÄÚ²¿Àà·ÃÎÊÍâ²¿Àà
-// InterfaceImplements ½Ó¿ÚÊµÏÖ
-// InterfaceImplements2 ½Ó¿ÚÊµÏÖ
-// JavaIOEncoding JavaÀïµÄ±àÂëÂÒÂëÎÊÌâ
+//////////////////////////////////////// é»˜è®¤åŒ…////////////////////////////////////////
+// AAAAReadMe è¯´æ˜
+// AbstractExtends æŠ½è±¡ç±»å®ç°
+// AbstractInterface æŠ½è±¡æ¥å£
+// AnonymousClass åŒ¿åç±»
+// ArrayDefine æ•°ç»„
+// ArrayDemo æ•°ç»„
+// ArraysMethodDemo æ•°ç»„æ–¹æ³•åº”ç”¨
+// ClassDestory å¯¹è±¡æ¸…ç†
+// DefaultAdapter1 æ¥å£é€‚é…å™¨
+// ExceptionSelfDefined è‡ªå®šä¹‰å¼‚å¸¸
+// ExceptionSelfDefinedTest è‡ªå®šä¹‰å¼‚å¸¸
+// ExceptionSelfDefinedTestTwo è‡ªå®šä¹‰å¼‚å¸¸
+// FaceByteIO é¢å‘å­—èŠ‚çš„IO
+// FaceByteIOHighEfficiency æ–‡ä»¶å¤åˆ¶é«˜æ•ˆç‡ç‰ˆæœ¬//ç©ºé¡¹ç›®
+// FileClass æ–‡ä»¶ç±»
+// FinalCircle ç»§æ‰¿
+// Generic æ³›å‹
+// GoToDemo GoToè¯­å¥
+// IfDemo Ifåˆ¤æ–­
+// InnerClass å†…éƒ¨ç±»
+// InnerClass2 å†…éƒ¨ç±»
+// InnerGetOuter å†…éƒ¨ç±»è®¿é—®å¤–éƒ¨ç±»
+// InterfaceImplements æ¥å£å®ç°
+// InterfaceImplements2 æ¥å£å®ç°
+// JavaIOEncoding Javaé‡Œçš„ç¼–ç ä¹±ç é—®é¢˜
 // JavaNIO Java New IO
-// JavaUtil Java¼¯ºÏ
+// JavaUtil Javaé›†åˆ
 // JavaUtilArrayList
 // JavaUtilHashMap
 // JavaUtilHashSet
@@ -40,34 +40,34 @@ public class AAAAReadMe {
 // JavaUtilTreeMap
 // JavaUtilTreeSet
 // JavaUtilVector
-// ObjectEquals ±È½Ï¶ÔÏó
-// ObjectSerialization ¶ÔÏóĞòÁĞ»¯
-// ObjectSerializationBad ¶ÔÏóĞòÁĞ»¯Ê§Ğ§
-// ObjectSerializationControl ¶ÔÏóĞòÁĞ»¯¿ØÖÆ
-// OuterClass Íâ²¿Àà
-// PI ÃÉÌØ¿¨ÂåÇóPI
-// ReaderWriter ÃæÏò×Ö·ûµÄI/O²Ù×÷,Ê¹ÓÃReaderºÍWriterÊµÏÖÎÄ±¾¸´ÖÆ//¿ÕÏîÄ¿
-// SQLServerDB Êı¾İ¿â//¿ÕÏîÄ¿
-// StaticDemo ¾²Ì¬³ÉÔ±Ê¾Àı
-// TestOverrideSuper ÖØĞ´ÒÔ¼°Super·½·¨
-// ThreadOperate Ïß³ÌµÄ»ù±¾²Ù×÷
-// ThreadSimple ¼Ì³ĞÏß³ÌÀàÊµÏÖ¶àÏß³Ì
-// ThreadSyncTicketSell Ïß³Ì×ÊÔ´Í¬²½¹²ÏíÎÊÌâ
-// ThreadSyncTicketSellTwo Ïß³Ì×ÊÔ´Í¬²½¹²ÏíÎÊÌâ
-// ThrowsTest Å×³öÒì³£
-// ThrowsTest2 Å×³öÒì³£
-// TryCatch Òì³£´¦Àí»úÖÆ
-// TryCatchReturn Òì³£´¦Àí×¢ÒâÊÂÏî
-// TurnUp ÏòÉÏ×ªĞÍ
-//////////////////////////////////////// test°ü////////////////////////////////////////
-// Test1 ²âÊÔ°ü¹ÜÀí
-// SuperTest ÆÚÄ©±à³ÌÌâ¹ØÓÚsuper//Î´Íê³É
-//////////////////////////////////////// practice°ü////////////////////////////////////////
-// HuiWenNumber »ØÎÄÊı
-// Loop Ñ­»·
-// MathTest ÊıÑ§Æ½·½²âÊÔ
-// Month ¿ØÖÆÌ¨ÊäÈëÊı×ÖÔÂÊä³öÎÄ×ÖÔÂ
-// Prime ËØÊı
-// Score ÅĞ¶Ï·ÖÊıÊÇ·ñ¼°¸ñ
-// SwitchTwoNumberWithoutTemp ²»Ê¹ÓÃÖĞ¼ä±äÁ¿½»»»Á½¸öÊı
-// Three ²âÊÔ
+// ObjectEquals æ¯”è¾ƒå¯¹è±¡
+// ObjectSerialization å¯¹è±¡åºåˆ—åŒ–
+// ObjectSerializationBad å¯¹è±¡åºåˆ—åŒ–å¤±æ•ˆ
+// ObjectSerializationControl å¯¹è±¡åºåˆ—åŒ–æ§åˆ¶
+// OuterClass å¤–éƒ¨ç±»
+// PI è’™ç‰¹å¡æ´›æ±‚PI
+// ReaderWriter é¢å‘å­—ç¬¦çš„I/Oæ“ä½œ,ä½¿ç”¨Readerå’ŒWriterå®ç°æ–‡æœ¬å¤åˆ¶//ç©ºé¡¹ç›®
+// SQLServerDB æ•°æ®åº“//ç©ºé¡¹ç›®
+// StaticDemo é™æ€æˆå‘˜ç¤ºä¾‹
+// TestOverrideSuper é‡å†™ä»¥åŠSuperæ–¹æ³•
+// ThreadOperate çº¿ç¨‹çš„åŸºæœ¬æ“ä½œ
+// ThreadSimple ç»§æ‰¿çº¿ç¨‹ç±»å®ç°å¤šçº¿ç¨‹
+// ThreadSyncTicketSell çº¿ç¨‹èµ„æºåŒæ­¥å…±äº«é—®é¢˜
+// ThreadSyncTicketSellTwo çº¿ç¨‹èµ„æºåŒæ­¥å…±äº«é—®é¢˜
+// ThrowsTest æŠ›å‡ºå¼‚å¸¸
+// ThrowsTest2 æŠ›å‡ºå¼‚å¸¸
+// TryCatch å¼‚å¸¸å¤„ç†æœºåˆ¶
+// TryCatchReturn å¼‚å¸¸å¤„ç†æ³¨æ„äº‹é¡¹
+// TurnUp å‘ä¸Šè½¬å‹
+//////////////////////////////////////// teståŒ…////////////////////////////////////////
+// Test1 æµ‹è¯•åŒ…ç®¡ç†
+// SuperTest æœŸæœ«ç¼–ç¨‹é¢˜å…³äºsuper//æœªå®Œæˆ
+//////////////////////////////////////// practiceåŒ…////////////////////////////////////////
+// HuiWenNumber å›æ–‡æ•°
+// Loop å¾ªç¯
+// MathTest æ•°å­¦å¹³æ–¹æµ‹è¯•
+// Month æ§åˆ¶å°è¾“å…¥æ•°å­—æœˆè¾“å‡ºæ–‡å­—æœˆ
+// Prime ç´ æ•°
+// Score åˆ¤æ–­åˆ†æ•°æ˜¯å¦åŠæ ¼
+// SwitchTwoNumberWithoutTemp ä¸ä½¿ç”¨ä¸­é—´å˜é‡äº¤æ¢ä¸¤ä¸ªæ•°
+// Three æµ‹è¯•
