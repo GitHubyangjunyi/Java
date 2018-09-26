@@ -17,12 +17,11 @@
     "editor.mouseWheelZoom": true,
     "files.autoSave": "afterDelay",
     "editor.renderControlCharacters": true,
-    "team.showWelcomeMessage": false,
     "csharp.format.enable": false,
     "gitlens.keymap": "alternate",
     "files.autoGuessEncoding": true,
     "code-runner.runInTerminal": true,
-    "java.home": "C:\\Program Files\\Java\\jdk-9.0.4",
+    "java.home": "C:\\Program Files\\Java\\jdk-11",
     "editor.smoothScrolling": true,
     "debug.inlineValues": true,
     "[java]": {
