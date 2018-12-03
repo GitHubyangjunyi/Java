@@ -477,6 +477,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-Operators<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Operators",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-OuterClass<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -615,6 +626,17 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "ThreadSimple",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreadSync<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ThreadSync",
             "projectName": "Java",
             "args": ""
         },

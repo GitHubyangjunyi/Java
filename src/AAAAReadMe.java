@@ -44,6 +44,7 @@ public class AAAAReadMe {
 // ObjectSerialization 对象序列化
 // ObjectSerializationBad 对象序列化失效
 // ObjectSerializationControl 对象序列化控制
+// Operators 运算符相关
 // OuterClass 外部类
 // PI 蒙特卡洛求PI
 // ReaderWriter 面向字符的I/O操作,使用Reader和Writer实现文本复制//空项目
@@ -52,6 +53,7 @@ public class AAAAReadMe {
 // TestOverrideSuper 重写以及Super方法
 // ThreadOperate 线程的基本操作
 // ThreadSimple 继承线程类实现多线程
+// ThreadSync 线程同步
 // ThreadSyncTicketSell 线程资源同步共享问题
 // ThreadSyncTicketSellTwo 线程资源同步共享问题
 // ThrowsTest 抛出异常

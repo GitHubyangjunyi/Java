@@ -19,7 +19,6 @@
     "editor.renderControlCharacters": true,
     "csharp.format.enable": false,
     "gitlens.keymap": "alternate",
-    "files.autoGuessEncoding": true,
     "code-runner.runInTerminal": true,
     "java.home": "C:\\Program Files\\Java\\jdk-11",
     "editor.smoothScrolling": true,
@@ -29,6 +28,5 @@
     },
     "debug.openDebug": "openOnSessionStart",
     "debug.showInStatusBar": "always",
-    "debug.internalConsoleOptions": "openOnSessionStart",
-    "files.encoding": "gbk",  
+    "debug.internalConsoleOptions": "openOnSessionStart",  
 }
