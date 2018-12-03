@@ -28,5 +28,7 @@
     },
     "debug.openDebug": "openOnSessionStart",
     "debug.showInStatusBar": "always",
-    "debug.internalConsoleOptions": "openOnSessionStart",  
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "files.encoding": "gb2312",
+    
 }

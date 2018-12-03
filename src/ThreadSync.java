@@ -1,31 +1,31 @@
 
-class Station {// æ¨¡æ‹Ÿè½¦ç«™
-    int num = 10;// é»˜è®¤10å¼ ç¥¨
+class Station {// Ä£Äâ³µÕ¾
+    int num = 10;// Ä¬ÈÏ10ÕÅÆ±
 
-    public Station(int num) {// åˆå§‹åŒ–è½¦ç«™æ—¶å¯è®¾ç½®ç¥¨çš„æ•°é‡
+    public Station(int num) {// ³õÊ¼»¯³µÕ¾Ê±¿ÉÉèÖÃÆ±µÄÊıÁ¿
         this.num = num;
-        System.out.println("åŒ—äº¬è¥¿ç«™åˆå§‹åŒ–,æ€»ç¥¨æ•°=" + this.num);
+        System.out.println("±±¾©Î÷Õ¾³õÊ¼»¯,×ÜÆ±Êı=" + this.num);
     }
 
     public void StartSell() {
         TicketSell shell = new TicketSell(this.num);
         Thread t1 = new Thread(shell);
         Thread t2 = new Thread(shell);
-        System.out.println("ä¸¤ä¸ªçª—å£å·²å‡†å¤‡å°±ç»ª");
-        System.out.println("ä¸¤ä¸ªçª—å£å·²å¼€å§‹å”®ç¥¨");
+        System.out.println("Á½¸ö´°¿ÚÒÑ×¼±¸¾ÍĞ÷");
+        System.out.println("Á½¸ö´°¿ÚÒÑ¿ªÊ¼ÊÛÆ±");
         t1.start();
         t2.start();
     }
 }
 
-class TicketSell implements Runnable {// æ¨¡æ‹Ÿå”®ç¥¨çª—å£ï¼Œæ€»ç¥¨æ•°ç”±è½¦ç«™æä¾›
+class TicketSell implements Runnable {// Ä£ÄâÊÛÆ±´°¿Ú£¬×ÜÆ±ÊıÓÉ³µÕ¾Ìá¹©
     int num;
 
     public TicketSell(int num) {
         this.num = num;
     }
 
-    public void run() {// å”®ç¥¨åŠ¨ä½œ
+    public void run() {// ÊÛÆ±¶¯×÷
         while (true) {
             synchronized ("") {
                 if (num > 0) {
@@ -35,7 +35,7 @@ class TicketSell implements Runnable {// æ¨¡æ‹Ÿå”®ç¥¨çª—å£ï¼Œæ€»ç¥¨æ•°ç”±è½¦ç«™
                         e.printStackTrace();
                     }
                     System.out.println(
-                            "å”®ç¥¨çª—å£" + Thread.currentThread().getName() + " sell ticket:1,left ticket: " + --num);
+                            "ÊÛÆ±´°¿Ú" + Thread.currentThread().getName() + " sell ticket:1,left ticket: " + --num);
                 } else {
                     return;
                 }
