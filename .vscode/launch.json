@@ -81,6 +81,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-ArrayListInThread<Java>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ArrayListInThread",
+            "projectName": "Java",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-ArraysMethodDemo<Java>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
